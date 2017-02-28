@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>scriptaculous</artifactId>
-    <version>5.31</version>
+    <version>1.90</version>
     <name>Scriptaculous</name>
     <description>WebJar for scriptaculous_js</description>
     <url>http://webjars.org</url>
