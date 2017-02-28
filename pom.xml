@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>scriptaculous</artifactId>
-    <version>1.90</version>
+    <version>1.9.0</version>
     <name>Scriptaculous</name>
     <description>WebJar for scriptaculous_js</description>
     <url>http://webjars.org</url>
@@ -34,7 +34,7 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>1.90</upstream.version>
+        <upstream.version>1.9.0</upstream.version>
         <upstream.url>http://script.aculo.us/dist/scriptaculous-js-${project.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
     </properties>
