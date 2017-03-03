@@ -71,7 +71,9 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/unzipped"/>
                                 <echo message="moving resources"/>
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/unzipped/scriptaculous-js-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/unzipped/scriptaculous-js-${upstream.version}">
+                                        <include name="test/**" />
+                                     </fileset>
                                 </move>
                             </target>
                         </configuration>
