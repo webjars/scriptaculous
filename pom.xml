@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>scriptaculous</artifactId>
-    <version>1.9.0</version>
+    <version>1.9.1-SNAPSHOT</version>
     <name>Scriptaculous</name>
     <description>WebJar for scriptaculous_js</description>
     <url>http://webjars.org</url>
@@ -42,7 +42,7 @@
         <url>http://github.com/webjars/scriptaculous</url>
         <connection>scm:git:https://github.com/webjars/scriptaculous.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/scriptaculous.git</developerConnection>
-        <tag>scriptaculous-1.9.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
