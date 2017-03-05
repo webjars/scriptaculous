@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>scriptaculous</artifactId>
-    <version>1.9.0</version>
+    <version>1.9.0-SNAPSHOT</version>
     <name>Scriptaculous</name>
     <description>WebJar for scriptaculous_js</description>
     <url>http://webjars.org</url>
@@ -34,10 +34,16 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>1.9.0</upstream.version>
-        <upstream.url>http://script.aculo.us/dist/scriptaculous-js-${project.version}.zip</upstream.url>
+        <upstream.url>http://script.aculo.us/dist/scriptaculous-js-${version.unsnapshot}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
     </properties>
+
+    <scm>
+        <url>http://github.com/webjars/scriptaculous</url>
+        <connection>scm:git:https://github.com/webjars/scriptaculous.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/scriptaculous.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     
     <build>
         <plugins>
@@ -54,7 +60,6 @@
                     </execution>
                 </executions>
             </plugin>
-<!-- zip download -->
            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
@@ -71,7 +76,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/unzipped"/>
                                 <echo message="moving resources"/>
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/unzipped/scriptaculous-js-${upstream.version}/src" />
+                                    <fileset dir="${project.build.directory}/unzipped/scriptaculous-js-${version.unsnapshot}/src" />
                                 </move>
                             </target>
                         </configuration>
